@@ -2,12 +2,12 @@ version: '3'
 
 services:
   backend:
-    build: ./backend
+    image: sadanandadj/simple_app_backend:latest
     ports:
       - "5000:5000"
 
   frontend:
-    build: ./frontend
+    image: sadanandadj/simple_app_frontend:latest
     ports:
       - "80:80"
     depends_on:
